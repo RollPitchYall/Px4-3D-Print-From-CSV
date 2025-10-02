@@ -1,4 +1,4 @@
-# px4-csv-waypoints-with-mavsdk
+# Px4-3D-Print-From-CSV
 
 A Python script to control a PX4 drone using [MAVSDK Python](https://mavsdk.mavlink.io/main/en/index.html) in **offboard mode**, following waypoints defined in a CSV file.
 
@@ -6,9 +6,19 @@ A Python script to control a PX4 drone using [MAVSDK Python](https://mavsdk.mavl
 
 ## Features
 
-- **PX4 Offboard Control** via MAVSDK
-- Reads waypoints from a CSV file
-- Compatible with **PX4 SITL simulation** and **real hardware**
+- **PX4 Offboard Control** via MAVSDK ☑
+- Reads waypoints from a CSV file ☑
+- Compatible with PX4 SITL simulation and real hardware ☑
+- Control the Drone position based on a text file with coordinates ☑
+- Track telemetry to determine when coordinates are reached ☑
+- Require the user to start the flight ☑
+- Allow a user to cancel and take manual control at any time ☑
+- Always command the drone's position to a future point so it doesn't slow and stop ☑
+- Monitor battery and return to home if low ☑
+- Print progress to console ☑
+- Set max velocity so foam is dispensed predictably ☑
+- Handle loss of offboard control gracefully ☑
+- Handle loss of controller connection gracefully ☑ (baked into PX4 failsafe settings)
 
 ---
 
