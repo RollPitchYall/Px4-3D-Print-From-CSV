@@ -27,7 +27,7 @@ A Python script to control a PX4 drone using [MAVSDK Python](https://mavsdk.mavl
 - Python **3.8+** ([Download](https://www.python.org/downloads/))
 - PX4 firmware running on:
 	- [PX4 SITL simulation](https://docs.px4.io/main/en/simulation/)
-	- Real drone hardware (via serial connection)
+	- Or real drone hardware (via serial connection)
 
 ---
 
