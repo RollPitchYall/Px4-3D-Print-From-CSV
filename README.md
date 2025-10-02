@@ -25,6 +25,7 @@ A Python script to control a PX4 drone using [MAVSDK Python](https://mavsdk.mavl
 
 ## Requirements
 
+- Companion Computer, WSL, or Linux Desktop
 - Python **3.8+** ([Download](https://www.python.org/downloads/))
 - PX4 firmware running on:
 	- [PX4 SITL simulation](https://docs.px4.io/main/en/simulation/)
@@ -75,8 +76,9 @@ pip install mavsdk --break-system-packages
 3. **Run PX4:**
 	 - SITL default connection: `udp://0.0.0.0:14540`
 	 - For real hardware, use the appropriate serial connection for your device.
+ 	 - 
 
-4. **Run the script:**
+5. **Run the script:**
 
 	Ensure that a CSV named coordinates.csv is in the same folder as the Python script, and that it is formatted correctly.
 
@@ -87,11 +89,7 @@ pip install mavsdk --break-system-packages
 ---
 
 ## Usage and Safety
-	
-	For safety, the script will not force the Flight Controller (simulated or real) into the Offboard control flight mode. The script initializes, sends an Offboard command which lets the flight controller know it's ready, then waits. The script tracks the MAVLink flight mode telemetry value, and once the user sets it to Offboard control, the script begins sending MAVLink position control packets. 
-
-	Additionally, the script continuously monitors the drone's flight mode, and if the user manually switches the flight mode out of Offboard while the script is running, it will stop control and shut down. This makes it so that the user cannot accidentally switch the control back into offboard and have the drone unexpectedly fly away.
-
-	
-	<img width="873" height="539" alt="image" src="https://github.com/user-attachments/assets/7ef86019-ea41-4c40-b246-528303c288af" />
+For safety, the script will not force the Flight Controller (simulated or real) into the Offboard control flight mode. The script initializes, sends an Offboard command which lets the flight controller know it's ready, then waits. The script tracks the MAVLink flight mode telemetry value, and once the user sets it to Offboard control, the script begins sending MAVLink position control packets.
+Additionally, the script continuously monitors the drone's flight mode, and if the user manually switches the flight mode out of Offboard while the script is running, it will stop control and shut down. This makes it so that the user cannot accidentally switch the control back into offboard and have the drone unexpectedly fly away.
+<img width="873" height="539" alt="image" src="https://github.com/user-attachments/assets/7ef86019-ea41-4c40-b246-528303c288af" />
 
