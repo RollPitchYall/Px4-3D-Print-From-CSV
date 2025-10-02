@@ -7,12 +7,13 @@ A Python script to control a PX4 drone using [MAVSDK Python](https://mavsdk.mavl
 ## Features
 
 - **PX4 Offboard Control** via MAVSDK ☑
-- Reads waypoints from a CSV file ☑
 - Compatible with PX4 SITL simulation and real hardware ☑
-- Control the Drone position based on a text file with coordinates ☑
+- Reads coordinates from a CSV file ☑
+- Controls the drone position based on the CSV coordinates ☑
+- Calculates the drone's yaw angle based on the coordinates ☑ 
 - Track telemetry to determine when coordinates are reached ☑
 - Require the user to start the flight ☑
-- Allow a user to cancel and take manual control at any time ☑
+- Allow a user to cancel and override control at any time ☑
 - Always command the drone's position to a future point so it doesn't slow and stop ☑
 - Monitor battery and return to home if low ☑
 - Print progress to console ☑
