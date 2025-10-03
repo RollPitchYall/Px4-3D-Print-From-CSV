@@ -1,4 +1,4 @@
-# Px4-3D-Print-From-CSV
+# PrintInFlight, a Px4 Offboard Controller
 
 A Python module to control a PX4 drone using [MAVSDK Python](https://mavsdk.mavlink.io/main/en/index.html) in **offboard mode**, following waypoints defined in a CSV file. Can be used as a standalone script or imported as a module for integration into larger applications.
 
