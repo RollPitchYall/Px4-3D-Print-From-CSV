@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PX4 CSV Waypoint Navigation Module
+PrintInFlight PX4 CSV Waypoint Navigation Module
 
 This module provides functionality to control a PX4 drone using waypoints
 loaded from CSV files via MAVSDK. It can be used as a standalone script
