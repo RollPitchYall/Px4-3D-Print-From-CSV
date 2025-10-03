@@ -7,7 +7,7 @@ loaded from CSV files via MAVSDK. It can be used as a standalone script
 or imported as a module for integration into other applications.
 
 Usage Instructions Available on Github:
-https://github.com/RollPitchYall/Px4-3D-Print-From-CSV/tree/main
+https://github.com/RollPitchYall/PrintInFlight/tree/main
 
 Author: RollPitchYall
 """
