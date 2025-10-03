@@ -46,7 +46,7 @@ class DroneController:
         self.drone: Optional[System] = None
         self.monitor_task: Optional[asyncio.Task] = None
     
-    async def run_mission(self, csv_filename: str = "coordinatesfast.csv") -> None:
+    async def run_mission(self, csv_filename: str = "coordinates.csv") -> None:
         """
         Execute the complete drone mission using waypoints from a CSV file.
         
@@ -252,7 +252,7 @@ class DroneController:
 
 
 def main(
-    csv_file: str = "coordinatesfar.csv", 
+    csv_file: str = "coordinates.csv", 
     system_address: str = "udpin://0.0.0.0:14540"
 ) -> None:
     """
