@@ -30,7 +30,7 @@ A Python module to control a PX4 drone using [MAVSDK Python](https://mavsdk.mavl
 ## Requirements
 
 - Companion Computer, WSL, or Linux Desktop
-- Python **3.8+** ([Download](https://www.python.org/downloads/))
+- Python **3.8+** ([Download](https://wwwthon.org/downloads/))
 - PX4 firmware running on:
 	- [PX4 SITL simulation](https://docs.px4.io/main/en/simulation/)
 	- Or real drone hardware (via serial connection)
@@ -62,7 +62,7 @@ pip install mavsdk --break-system-packages
 
 ## Files in this Repository
 
-- **`px4_csv_waypoints_with_mavsdk.py`** - Main module with `DroneController` class
+- **`PrintInFlight.py`** - Main module with `DroneController` class
 - **`test_mission.py`** - Test script for drone connections and missions
 - **`example_usage.py`** - Examples showing how to use the module
 - **`coordinates.csv`** - Default waypoint file (small test pattern)
@@ -77,7 +77,7 @@ pip install mavsdk --break-system-packages
 
 ### Method 1: Standalone Script
 ```sh
-python px4_csv_waypoints_with_mavsdk.py
+python PrintInFlight.py
 ```
 
 ### Method 2: Use as Python Module
@@ -123,7 +123,7 @@ This provides interactive testing with error handling and timeouts.
 	Ensure that a CSV named coordinates.csv is in the same folder as the Python script, and that it is formatted correctly.
 
 	 ```sh
-	 python px4-csv-waypoints-with-mavsdk.py
+	 python PrintInFlight.py
 	 ```
 ---
 
@@ -211,7 +211,7 @@ When the user switches out of Offboard mode during flight:
 
 **Import errors when using as module:**
 - Ensure MAVSDK is installed: `pip install mavsdk`
-- Use underscores in filename: `px4_csv_waypoints_with_mavsdk.py`
+- Use underscores in filename: `PrintInFlight.py`
 
 **Mission stops unexpectedly:**
 - Check console for "Flight interrupted at row X" message
